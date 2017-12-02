@@ -5,6 +5,73 @@
 	<title>Joe's Resumé</title>
 </head>
 <body>
-	<h1>Hello!</h1>
+	<style>
+		body {
+			box-sizing: border-box;
+			font-size: 10px;
+			background: #bada55;
+			font-family: 'Roboto', sans-serif;
+		}
+		div#app {
+			display: flex;
+		}
+		section {
+			flex: 1;
+			width: 100%;
+		}
+		section h2 {
+			font-size: 2em;
+		}
+	</style>
+	<div id="app">
+		<section id="greeting">
+			<h2>Hello, thanks for stopping by!</h2>
+		</section>
+		<section id="mainstay">
+			<h2>My time at Mainstay Technologies...</h2>
+		</section>
+		<section id="plymouth">
+			<h2>My time at Plymouth State University...</h2>
+		</section>
+		<section id="debris">
+			<h2>My time at Debris Publishing</h2>
+		</section>
+		<section id="knowledge">
+			<h2>Here's some stuff I've picked up along the way</h2>
+			<ul>
+				<li>Javascript
+					<ul>
+						<li>Vue.js</li>
+						<li>jQuery</li>
+						<li>React (I've done some review and tinkered a bit)</li>
+						<li>Webpack</li>
+						<li>Node.js</li>
+					</ul>
+				</li>
+				<li>
+					PHP
+					<ul>
+						<li>Laravel</li>
+						<li>Custom Framework at Mainstay</li>
+						<li>Custom Framework at Plymouth</li>
+						<li>Wordpress</li>
+						<li>Joomla</li>
+						<li>Worked with Composer</li>
+					</ul>
+				</li>
+				<li>
+					CSS
+					<ul>
+						<li>Bootstrap</li>
+						<li>Bulma</li>
+						<li>Vanilla</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<section id="interests">
+			<h2>Here are some things that I like to do when I'm not working</h2>
+		</section>
+	</div>
 </body>
 </html>
