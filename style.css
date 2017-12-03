@@ -36,6 +36,15 @@ section:last-child {
 	border: none;
 }
 
+#skill-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.skill{
+	width: 48%;
+	padding: 1em .5em;
+}
 
 .header1 { font-size: 1.5em; }
 .header2 { 
