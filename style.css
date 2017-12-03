@@ -1,0 +1,55 @@
+:root {
+	--blue: #4483d9;
+};
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+} 
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	display: flex;
+	justify-content: center;
+}
+
+div#app {
+	width: 960px;
+}
+
+header {
+	text-align: right;
+	border-bottom: .5em solid #4483d9;
+	padding-bottom: .5em;
+}
+
+section {
+	width: 100%;
+	border-bottom: 1px solid #4483d9;
+}
+
+section:last-child {
+	border: none;
+}
+
+
+.header1 { font-size: 1.5em; }
+.header2 { 
+	font-size: 1.25em; 
+	color: #4483d9;
+	font-weight: 400;
+}
+
+.time {
+	font-style: italic;
+	float: right;
+	font-weight: 100;
+}
+.label {
+	font-weight: bold;
+	font-size: 1.1em;
+}
