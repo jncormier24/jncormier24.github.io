@@ -3,7 +3,77 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Resumé</title>
-	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --blue: #4483d9;
+    };
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+      box-sizing: inherit;
+    } 
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 200;
+      display: flex;
+      justify-content: center;
+    }
+
+    div#app {
+      width: 960px;
+    }
+
+    header {
+      text-align: right;
+      border-bottom: .5em solid #4483d9;
+      padding-bottom: .5em;
+    }
+
+    header a {
+      text-decoration: none;
+    }
+
+    section {
+      width: 100%;
+      border-bottom: 1px solid #4483d9;
+    }
+
+    section:last-child {
+      border: none;
+    }
+
+    #skill-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .skill{
+      width: 48%;
+      padding: 1em .5em;
+    }
+
+    .header1 { font-size: 1.5em; }
+    .header2 { 
+      font-size: 1.25em; 
+      color: #4483d9;
+      font-weight: 400;
+    }
+
+    .time {
+      font-style: italic;
+      float: right;
+      font-weight: 100;
+    }
+    .label {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+  </style>
 </head>
 <body>
 	<div id="app">
@@ -15,31 +85,43 @@
 			<section id="work">
 				<h2 class="header2">Work Experience</h2>
 				<section id="mainstay">
-					<h1 class="header1">Mainstay Technologies - Software Engineer<span class="time">2013 - Present</span></h1>
-					<ul>
-						<li>Architech of in house web application for security team</li>
-						<li>Lead Research and Development for operations</li>
-						<li>Develop and maintain custom websites and web applications</li>
-						<li>Support and maintain linux servers and support deployment process</li>
-						<li>Interact with clients regarding support requests</li>
-						<li>Consult with clients to create proposals and scopes for custom projects and websites</li>
-						<li>Maintain in-house development framework</li>
-					</ul>
+          <h1 class="header1">Mainstay Technologies - Software Engineer<span class="time">2013 - Present</span></h1>
+          <p>Tools Used: PHP, Laravel, Wordpress, Javascript, Vue, jQuery, MySQL, MsSQL, Bash, Powershell, LabTech, Git.</p>
+          <ul>
+            <li>
+              Architech of security and training that provides our customers a tool to track employee training progress and see progression of security metrics.
+            </li>
+            <li>Leading a cross functional team research new RMM tools for the company, to replace current solution. New solution will increase visibility into managed clients and provide team with at least a 10 percent productivity increase.</li>
+            <li>Consult with web clients on better ways to enhance their web presence and website.</li>
+            <li>Consult with clients to create proposals and scopes for custom projects and websites.</li>
+            <li>Develop custom websites and applications.</li>
+            <li>Maintain and develop in-house PHP framework.</li>
+          </ul>
 				</section>
 				<section id="plymouth">
-					<h1 class="header1">Plymouth State University - MIS - Junior Developer<span class="time">2012 - 2013</span></h1>
-					<ul><li>Maintain and add code per pull request and review.</li></ul>
+          <h1 class="header1">Plymouth State University - MIS - Junior Developer<span class="time">2012 - 2013</span></h1>
+          <p>Tools Used: PHP, Wordpress, Javascript, jQuery, MySQL, MsSQL, Bash, Git.</p>
+					<ul>
+            <li>Work through support cases with team lead.</li>
+            <li>Develop solutions to support cases, and work with team lead to integrate solutions into project code base.</li>
+          </ul>
 				</section>
 				<section id="fidelity">
-					<h1 class="header1">Fidelity Investments - Technical Intern <span class="time">2012</span></h1>
+          <h1 class="header1">Fidelity Investments - Technical Intern <span class="time">2012</span></h1>
+          <p>Tools Used: Bash, Javascript, jQuery.</p>
 					<ul>
-						<li>Research Tomcat server and it's upgrade path</li>
-						<li>Developed a proof of concept data tracking tool using HTML5, CSS3, jQuery, AJAX, and SOAP</li>
+						<li>Research the Apache Tomcat server software and create a clear upgrade path for current Tomcat version.</li>
+						<li>
+              Developed a proof of concept data tracking tool using HTML5, CSS3, jQuery, AJAX, and SOAP to replace desktop program with at leaset a 10 percent increase in efficiancy</li>
 					</ul>
 				</section>
 				<section id="debris">
-					<h1 class="header1">Debris Publishing - Junior Developer<span class="time">2012</span></h1>
-					<ul><li>Develop a web based and iOS based financial calculator.</li></ul>
+          <h1 class="header1">Debris Publishing - Junior Developer<span class="time">2012</span></h1>
+          <p>Tools Used: PHP, Javascript, jQuery, Objective-C, SmallTalk.</p>
+					<ul>
+            <li>Work with CTO to create concept for Financial calculator on the Web.</li>
+            <li>Work to move concept for web based Financial Caluclator to iOS.</li>
+          </ul>
 				</section>
 			</section>
 			<section id="academics">
@@ -50,7 +132,7 @@
 			<section id="skills">
 				<h2 class="header2">Skills</h2>
 				<div id="skill-container">
-					<div class="skill"><div class="label">Javascript</div>Vue, React, jQuery</div>
+					<div class="skill"><div class="label">Javascript</div>Vue, React, Node, jQuery</div>
 					<div class="skill"><div class="label">PHP</div>Laravel, Wordpress, Joomla, Custom Framework</div>
 					<div class="skill"><div class="label">CSS</div>Bootstrap, Bulma</div>
 					<div class="skill"><div class="label">SQL</div>MySQL, MSSQL</div>
@@ -59,7 +141,9 @@
 			</section>
 			<section id="interests">
 				<h2 class="header2">Interests</h2>
-				<p>Outside of work I enjoy spending time with my Girlfriend and our Rabbit Loop. I am an avid Boston Sports fan and enjoy catching a game when I can. I will play golf whenever I can, summer or winter. I enjoy learning as much as possible, whether it's new technologies or a new piece of music on guitar I am always thinking about what's coming up next.</p>
+				<p>
+          When I am not working I enjoy spending time with my girlfriend and our pet rabbit Loop. I am an avid sports fan, particularly the Boston Sports. I attend games when I can and will talk at length with anyone regarding just about any sporting event. I love to play golf and will do so whenever I can, all year round. I am a lifelong musician and have a love for playing guitar. I will just about any type of music, but usually the shreddier the better. I strongly believe in learning for the sake of knowledge, and try to learn as much as I can about anything that interests me. The best weekends are spent learning a new techology stack, new music for guitar, or improving my golf game. 
+        </p>
 			</section>
 		</div>
 		<footer>
