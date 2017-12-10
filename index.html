@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Resumé</title>
-  <link rel="stylesheet" href="style.css">
   <style>
     :root {
       --blue: #4483d9;
@@ -20,12 +19,17 @@
     body {
       font-family: 'Roboto', sans-serif;
       font-weight: 200;
-      display: flex;
-      justify-content: center;
     }
 
     div#app {
-      width: 960px;
+    }
+
+    @media print {
+      body {
+        width: 98%;
+        margin: 1%;
+        font-size: 10px;
+      }
     }
 
     header {
@@ -48,20 +52,31 @@
     }
 
     #skill-container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-    .skill{
-      width: 48%;
-      padding: 1em .5em;
+      position: relative;
+      overflow: hidden;
+      clear: after;
     }
 
-    .header1 { font-size: 1.5em; }
+    .skill{
+      width: 48%;
+      padding: .5em .25em;
+      float: left;
+      display: block;
+    }
+
+    .skill:after {
+      clear: left;
+    }
+
+    .header1 { 
+      font-size: 1.5em; 
+      margin: .25em 0;
+    }
     .header2 { 
       font-size: 1.25em; 
       color: #4483d9;
       font-weight: 400;
+      margin: .25em 0;
     }
 
     .time {
